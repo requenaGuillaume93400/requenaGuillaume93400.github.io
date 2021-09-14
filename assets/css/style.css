@@ -1,0 +1,524 @@
+@font-face {
+  font-family: "comfortaa";
+  src: url("../fonts/comfortaa/static/Comfortaa-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.firstCarrousel {
+  animation-duration: 30s;
+  animation-name: first;
+  animation-iteration-count: infinite;
+}
+
+@keyframes first {
+  from {
+    background-position: initial;
+  }
+  7% {
+    background-position: 14.3%;
+  }
+  14% {
+    background-position: 28.6%;
+  }
+  21% {
+    background-position: 42.9%;
+  }
+  28% {
+    background-position: 57.2%;
+  }
+  35% {
+    background-position: 71.5%;
+  }
+  42% {
+    background-position: 85.5%;
+  }
+  49% {
+    background-position: 100%;
+  }
+  56% {
+    background-position: 85.5%;
+  }
+  63% {
+    background-position: 71.5%;
+  }
+  70% {
+    background-position: 57.2%;
+  }
+  77% {
+    background-position: 42.9%;
+  }
+  84% {
+    background-position: 28.6%;
+  }
+  91% {
+    background-position: 14.3%;
+  }
+  to {
+    background-position: initial;
+  }
+}
+.secondCarrousel {
+  animation-duration: 27s;
+  animation-name: second;
+  animation-iteration-count: infinite;
+}
+
+@keyframes second {
+  from {
+    background-position: initial;
+  }
+  10% {
+    background-position: 20%;
+  }
+  20% {
+    background-position: 40%;
+  }
+  30% {
+    background-position: 60%;
+  }
+  40% {
+    background-position: 80%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  60% {
+    background-position: 80%;
+  }
+  70% {
+    background-position: 60%;
+  }
+  80% {
+    background-position: 40%;
+  }
+  90% {
+    background-position: 20%;
+  }
+  to {
+    background-position: initial;
+  }
+}
+.thirdCarrousel {
+  animation-duration: 8s;
+  animation-name: third;
+  animation-iteration-count: infinite;
+}
+
+@keyframes third {
+  from {
+    background-position: initial;
+  }
+  50% {
+    background-position: 100%;
+  }
+  75% {
+    background-position: 100%;
+  }
+  to {
+    background-position: initial;
+  }
+}
+.fourthCarrousel {
+  animation-duration: 50s;
+  animation-name: fourth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fourth {
+  from {
+    background-position: initial;
+  }
+  4% {
+    background-position: 7.7%;
+  }
+  8% {
+    background-position: 15.4%;
+  }
+  12% {
+    background-position: 23.1%;
+  }
+  16% {
+    background-position: 30.8%;
+  }
+  20% {
+    background-position: 38.45%;
+  }
+  24% {
+    background-position: 46.15%;
+  }
+  28% {
+    background-position: 53.85%;
+  }
+  32% {
+    background-position: 61.5%;
+  }
+  36% {
+    background-position: 69.2%;
+  }
+  40% {
+    background-position: 76.9%;
+  }
+  44% {
+    background-position: 84.6%;
+  }
+  47% {
+    background-position: 92.3%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  53% {
+    background-position: 92.3%;
+  }
+  57% {
+    background-position: 84.6%;
+  }
+  61% {
+    background-position: 76.9%;
+  }
+  65% {
+    background-position: 69.2%;
+  }
+  69% {
+    background-position: 61.5%;
+  }
+  73% {
+    background-position: 53.85%;
+  }
+  77% {
+    background-position: 46.15%;
+  }
+  81% {
+    background-position: 38.45%;
+  }
+  85% {
+    background-position: 30.8%;
+  }
+  89% {
+    background-position: 23.1%;
+  }
+  93% {
+    background-position: 15.4%;
+  }
+  97% {
+    background-position: 7.7%;
+  }
+  to {
+    background-position: initial;
+  }
+}
+body {
+  font-family: "comfortaa";
+  width: 100%;
+  background: url("../img/binary.png") center/cover;
+  background-attachment: fixed;
+}
+body header {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+body header h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body header h1 span {
+  font-size: 3rem;
+  display: block;
+  padding-top: 1rem;
+}
+body header h1 span:nth-of-type(2) {
+  font-size: 2.5rem;
+}
+body header div {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+body header div img:nth-of-type(1) {
+  transform: scale(0.92);
+}
+body header div img:nth-of-type(5) {
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+body main {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body main h2 {
+  width: 120%;
+  margin: 5rem auto 0.4rem auto;
+  font-size: 2.2rem;
+  color: #fff;
+  text-align: center;
+}
+body main p {
+  line-height: 1.5;
+}
+body main img {
+  border-radius: 25%;
+}
+body main .separator {
+  width: 80%;
+  height: 2px;
+  margin: 20px auto;
+  border-bottom: 2px dashed rgba(228, 228, 228, 0.897);
+}
+body main article {
+  width: 95%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.501);
+  color: white;
+  border-radius: 1rem;
+}
+body main article:nth-of-type(1) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+body main article:nth-of-type(1) div {
+  cursor: pointer;
+  margin: 1.5rem 0;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body main article:nth-of-type(1) div:nth-of-type(1) {
+  background: url("../img/restau.png");
+}
+body main article:nth-of-type(1) div:nth-of-type(2) {
+  background: url("../img/hello.png");
+}
+body main article:nth-of-type(1) div:nth-of-type(3) {
+  background: url("../img/archi.png");
+}
+body main article:nth-of-type(1) div:nth-of-type(4) {
+  background: url("../img/fake.png");
+}
+body main article:nth-of-type(2) figure:nth-of-type(6) img {
+  background-color: #fff;
+}
+body main article:nth-of-type(3), body main article:nth-of-type(4) {
+  padding: 1.2rem 0 1rem 0;
+}
+body main article:nth-of-type(3) img, body main article:nth-of-type(4) img {
+  width: 100px;
+}
+body main article:nth-of-type(3) .container, body main article:nth-of-type(4) .container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+body main article:nth-of-type(3) .container:not(:nth-of-type(1)), body main article:nth-of-type(4) .container:not(:nth-of-type(1)) {
+  margin-top: 0.6rem;
+}
+body main article:nth-of-type(3) .container div, body main article:nth-of-type(4) .container div {
+  margin-left: 4rem;
+}
+body main article:nth-of-type(3) .container div p:first-child, body main article:nth-of-type(4) .container div p:first-child {
+  font-weight: bold;
+}
+body main article.flex-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+body main article.flex-container figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 0px black;
+}
+body main article.flex-container figure figcaption {
+  text-align: center;
+}
+body main article ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+}
+body main article ul li {
+  width: 20%;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+body main article ul li span {
+  display: block;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+body main article ul li:nth-of-type(1), body main article ul li:nth-of-type(2) {
+  background-color: orange;
+}
+body main article ul li:nth-of-type(3) {
+  background-color: #873b7e;
+}
+body main article ul li:nth-of-type(4) {
+  background-color: #0b66c3;
+}
+body main article ul li:hover {
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: 0.6s;
+  color: black;
+}
+body main article ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+body main article:nth-of-type(6) {
+  text-align: center;
+  padding: 1rem 0;
+}
+body main article:nth-of-type(6) p:last-child a {
+  display: block;
+  margin-top: 0.3rem;
+}
+body main article a img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+body main h2 {
+  margin-left: 100%;
+}
+body main article {
+  margin-left: -100%;
+}
+body main .show-right {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: switch-right;
+}
+body main .show-left {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: switch-left;
+}
+@keyframes switch-right {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: -12.5%;
+  }
+}
+@keyframes switch-left {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+body footer {
+  margin-top: 2rem;
+}
+body footer i {
+  font-size: 2.5rem;
+}
+body footer div:first-child {
+  height: 50vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+body footer div:first-child h2 {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 2.5rem 0 1rem 0;
+  text-align: center;
+}
+body footer div:first-child div {
+  width: 35%;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 0.5rem;
+}
+body footer div:first-child div:nth-of-type(1) {
+  border-color: orange;
+}
+body footer div:first-child div:nth-of-type(1) i,
+body footer div:first-child div:nth-of-type(1) p,
+body footer div:first-child div:nth-of-type(1) a {
+  color: orange;
+}
+body footer div:first-child div:nth-of-type(1) i:hover,
+body footer div:first-child div:nth-of-type(1) p:hover,
+body footer div:first-child div:nth-of-type(1) a:hover {
+  color: #873b7e;
+}
+body footer div:first-child div:nth-of-type(2) {
+  border-color: #873b7e;
+}
+body footer div:first-child div:nth-of-type(2) i,
+body footer div:first-child div:nth-of-type(2) p,
+body footer div:first-child div:nth-of-type(2) a {
+  color: #873b7e;
+}
+body footer div:first-child div:nth-of-type(2) i:hover,
+body footer div:first-child div:nth-of-type(2) p:hover,
+body footer div:first-child div:nth-of-type(2) a:hover {
+  color: orange;
+}
+body footer div:first-child div a {
+  font-weight: bold;
+  text-decoration: none;
+}
+body footer .social {
+  border-top: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 0.5rem;
+}
+body footer div {
+  text-align: center;
+}
+body footer div p:nth-of-type(1) {
+  width: 20%;
+  margin: 0.7rem auto 1rem auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+body footer div i:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+body footer div .fa-linkedin {
+  color: #0b66c3;
+}
+body footer div .fa-github-square {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
