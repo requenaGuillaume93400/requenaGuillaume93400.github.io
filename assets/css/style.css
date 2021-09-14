@@ -401,7 +401,8 @@ body main article:nth-of-type(6) {
 }
 body main article:nth-of-type(6) p:last-child a {
   display: block;
-  margin-top: 0.3rem;
+  width: 30%;
+  margin: 0.3rem auto 0 auto;
 }
 body main article a img:hover {
   transform: scale(1.1);
