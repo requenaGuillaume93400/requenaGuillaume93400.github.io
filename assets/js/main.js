@@ -14,11 +14,11 @@ window.addEventListener("DOMContentLoaded", function () {
   window.document.addEventListener("scroll", function () {
     progress = (Math.ceil(window.scrollY) * 100) / scrollable;
 
-    console.log(progress);
+    // console.log(progress);
 
     // First h2 & article
     showTitle(2, 0);
-    showArticle(3, 0);
+    showArticle(2, 0);
 
     showTitle(28, 1);
     showArticle(29, 1);
@@ -32,8 +32,8 @@ window.addEventListener("DOMContentLoaded", function () {
     showTitle(44, 4);
     showArticle(45, 4);
 
-    showTitle(50, 5);
-    showArticle(52, 5);
+    showTitle(73, 5);
+    showArticle(74, 5);
   });
 
   carrousel(carrousels[0], "firstCarrousel");

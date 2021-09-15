@@ -15,7 +15,6 @@ $bgc: rgba(255, 255, 255, 0.85);
   font-size: 16px;
 }
 
-// First Article
 // FIRST
 .firstCarrousel {
   animation-duration: 30s;
@@ -25,7 +24,7 @@ $bgc: rgba(255, 255, 255, 0.85);
 
 @keyframes first {
   from {
-    background-position: initial;
+    background-position: 0%;
   }
   7% {
     background-position: 14.3%;
@@ -67,7 +66,7 @@ $bgc: rgba(255, 255, 255, 0.85);
     background-position: 14.3%;
   }
   to {
-    background-position: initial;
+    background-position: 0%;
   }
 }
 
@@ -80,7 +79,7 @@ $bgc: rgba(255, 255, 255, 0.85);
 
 @keyframes second {
   from {
-    background-position: initial;
+    background-position: 0%;
   }
   10% {
     background-position: 20%;
@@ -110,7 +109,7 @@ $bgc: rgba(255, 255, 255, 0.85);
     background-position: 20%;
   }
   to {
-    background-position: initial;
+    background-position: 0%;
   }
 }
 
@@ -123,7 +122,7 @@ $bgc: rgba(255, 255, 255, 0.85);
 
 @keyframes third {
   from {
-    background-position: initial;
+    background-position: 0%;
   }
   50% {
     background-position: 100%;
@@ -132,7 +131,7 @@ $bgc: rgba(255, 255, 255, 0.85);
     background-position: 100%;
   }
   to {
-    background-position: initial;
+    background-position: 0%;
   }
 }
 
@@ -145,7 +144,7 @@ $bgc: rgba(255, 255, 255, 0.85);
 
 @keyframes fourth {
   from {
-    background-position: initial;
+    background-position: 0%;
   }
   4% {
     background-position: 7.7%;
@@ -186,6 +185,9 @@ $bgc: rgba(255, 255, 255, 0.85);
   50% {
     background-position: 100%;
   }
+  51% {
+    background-position: 100%;
+  }
   53% {
     background-position: 92.3%;
   }
@@ -223,7 +225,7 @@ $bgc: rgba(255, 255, 255, 0.85);
     background-position: 7.7%;
   }
   to {
-    background-position: initial;
+    background-position: 0%;
   }
 }
 
@@ -272,7 +274,6 @@ body {
           transform: scale(0.92);
         }
 
-        // MYSQL Logo
         &:nth-of-type(5) {
           width: 100px;
           background-color: #fff;
@@ -283,7 +284,7 @@ body {
   }
 
   main {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     overflow: hidden;
 
@@ -311,14 +312,17 @@ body {
     }
 
     article {
-      width: 95%;
+      width: 100%;
       margin: 0 auto;
       background-color: rgba(0, 0, 0, 0.501);
       color: white;
       border-radius: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
 
       // First article " Réalisations "
       &:nth-of-type(1) {
+        width: 98%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -334,19 +338,22 @@ body {
 
           &:nth-of-type(1) {
             background: url("../img/restau.png");
-            // background-position: 0%;
+            background-position: 0%;
           }
 
           &:nth-of-type(2) {
             background: url("../img/hello.png");
+            background-position: 0%;
           }
 
           &:nth-of-type(3) {
             background: url("../img/archi.png");
+            background-position: 0%;
           }
 
           &:nth-of-type(4) {
             background: url("../img/fake.png");
+            background-position: 0%;
           }
         }
       }
@@ -422,62 +429,61 @@ body {
         }
       }
 
-      // 6eme article " Plus "
-      ul {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        list-style-type: none;
-        text-align: center;
-
-        li {
-          width: 20%;
-          margin: 0.5rem 0;
-          padding: 0.5rem 0;
-          border-radius: 0.5rem;
-          cursor: pointer;
-          border: 2px solid transparent;
-
-          span {
-            display: block;
-            padding: 0.3rem;
-            font-weight: bold;
-          }
-
-          &:nth-of-type(1),
-          &:nth-of-type(2) {
-            background-color: $mail-color;
-          }
-
-          &:nth-of-type(3) {
-            background-color: $tel-color;
-          }
-
-          &:nth-of-type(4) {
-            background-color: rgb(11, 102, 195);
-          }
-
-          &:hover {
-            border: 2px solid black;
-            background-color: $bgc;
-            transition: 0.6s;
-            color: rgba(0, 0, 0, 1);
-          }
-
-          a {
-            display: block;
-            color: inherit;
-            text-decoration: none;
-          }
-        }
-      }
-
-      // Sixth article
+      // Sixth article "Plus"
       &:nth-of-type(6) {
         text-align: center;
         padding: 1rem 0;
+
+        ul {
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          list-style-type: none;
+          text-align: center;
+
+          li {
+            width: 20%;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+
+            span {
+              display: block;
+              padding: 0.3rem;
+              font-weight: bold;
+            }
+
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+              background-color: $mail-color;
+            }
+
+            &:nth-of-type(3) {
+              background-color: $tel-color;
+            }
+
+            &:nth-of-type(4) {
+              background-color: rgb(11, 102, 195);
+            }
+
+            &:hover {
+              border: 2px solid black;
+              background-color: $bgc;
+              transition: 0.6s;
+              color: rgba(0, 0, 0, 1);
+            }
+
+            a {
+              display: block;
+              color: inherit;
+              text-decoration: none;
+            }
+          }
+        }
 
         p:last-child {
           a {
@@ -526,7 +532,7 @@ body {
       }
     }
 
-    // Pop
+    // Pop from right and left side
     h2 {
       margin-left: 100%;
     }
@@ -565,7 +571,7 @@ body {
       margin-left: 0;
     }
   }
-  // Pop
+  // Pop from right and left side
 
   footer {
     margin-top: 2rem;
@@ -664,84 +670,17 @@ body {
 }
 
 // ************************* Responsive ************************* \\
-// TABLET
-// Prends en compte a 826px wtf ???????????????????????????
-@media screen and(max-width: 843px) {
-  body {
-    header {
-      h1 {
-        font-size: 3rem;
 
-        span,
-        span:nth-of-type(2) {
-          font-size: 2rem;
-        }
+@media screen and(max-width: 430px) {
+  body main {
+    article:nth-of-type(3),
+    article:nth-of-type(4) {
+      a {
+        display: none;
       }
 
-      div {
-        img {
-          width: 70px;
-
-          &:nth-of-type(5) {
-            width: 70px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 625px) {
-  body {
-    main {
-      article {
-        &:nth-of-type(1) {
-          padding: 0 0.5rem;
-
-          div {
-            margin: 0.7rem auto;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 1020px) {
-  body {
-    main {
-      article {
-        &:nth-of-type(2) {
-          padding-right: 0.5rem;
-
-          figure {
-            margin-left: 0.5rem;
-
-            // javascript text
-            &:nth-of-type(4) {
-              figcaption {
-                margin-left: -5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 931px) {
-  body {
-    main {
-      article {
-        &:nth-of-type(2),
-        &:nth-of-type(5) {
-          padding-right: 0.5rem;
-
-          figure {
-            margin-top: 0.8rem;
-          }
-        }
+      .container div {
+        margin-left: 2rem;
       }
     }
   }
@@ -750,17 +689,13 @@ body {
 @media screen and(max-width: 590px) {
   body {
     main {
-      article {
-        &:nth-of-type(2),
-        &:nth-of-type(3),
-        &:nth-of-type(4),
-        &:nth-of-type(5),
-        &:nth-of-type(6) {
-          padding-right: 0.8rem;
-        }
+      h2 {
+        word-spacing: 1000px;
+      }
 
-        &:nth-of-type(6) {
-          padding-left: 0.8rem;
+      article:nth-of-type(1) {
+        div {
+          width: 300px;
         }
       }
     }
@@ -793,6 +728,22 @@ body {
   }
 }
 
+@media screen and(max-width: 625px) {
+  body {
+    main {
+      article {
+        &:nth-of-type(1) {
+          padding: 0 0.5rem;
+
+          div {
+            margin: 0.7rem auto;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and(max-width: 690px) {
   body main {
     article {
@@ -809,15 +760,65 @@ body {
   }
 }
 
-@media screen and(max-width: 470px) {
+// TABLET
+// Prends en compte a 826px wtf ???????????????????????????
+@media screen and(max-width: 843px) {
+  body {
+    header {
+      h1 {
+        font-size: 3rem;
+
+        span,
+        span:nth-of-type(2) {
+          font-size: 2rem;
+        }
+      }
+
+      div {
+        img {
+          width: 70px;
+
+          &:nth-of-type(5) {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 931px) {
   body {
     main {
       width: 95%;
 
-      h2 {
-        font-size: 1.7rem;
-        width: 115%;
-        word-spacing: 1000px;
+      article {
+        &:nth-of-type(2),
+        &:nth-of-type(5) {
+          figure {
+            margin-top: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1020px) {
+  body {
+    main {
+      article {
+        &:nth-of-type(2) {
+          figure {
+            margin-left: 0.5rem;
+
+            &:nth-of-type(4) {
+              figcaption {
+                margin-left: -5px;
+              }
+            }
+          }
+        }
       }
     }
   }
