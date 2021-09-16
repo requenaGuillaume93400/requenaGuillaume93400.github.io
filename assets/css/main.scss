@@ -674,6 +674,7 @@ body {
 @media screen and(max-width: 430px) {
   body {
     header {
+      overflow: hidden;
       h1 {
         top: 45%;
       }
