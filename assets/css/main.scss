@@ -672,16 +672,35 @@ body {
 // ************************* Responsive ************************* \\
 
 @media screen and(max-width: 430px) {
-  body main {
-    article:nth-of-type(3),
-    article:nth-of-type(4) {
-      a {
-        display: none;
+  body {
+    header {
+      h1 {
+        top: 45%;
       }
 
-      .container div {
-        margin-left: 2rem;
+      div {
+        flex-flow: row wrap;
+        bottom: 2%;
       }
+    }
+
+    main {
+      overflow: hidden;
+
+      article:nth-of-type(3),
+      article:nth-of-type(4) {
+        a {
+          display: none;
+        }
+
+        .container div {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    footer {
+      overflow: hidden;
     }
   }
 }
