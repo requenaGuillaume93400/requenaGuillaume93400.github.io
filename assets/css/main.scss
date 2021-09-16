@@ -671,38 +671,98 @@ body {
 
 // ************************* Responsive ************************* \\
 
-@media screen and(max-width: 430px) {
+@media screen and(max-width: 1020px) {
+  body {
+    main {
+      article {
+        &:nth-of-type(2) {
+          figure {
+            margin-left: 0.5rem;
+
+            &:nth-of-type(4) {
+              figcaption {
+                margin-left: -5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 931px) {
+  body {
+    main {
+      width: 95%;
+
+      article {
+        &:nth-of-type(2),
+        &:nth-of-type(5) {
+          figure {
+            margin-top: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// TABLET
+// Prends en compte a 826px wtf ???????????????????????????
+@media screen and(max-width: 843px) {
   body {
     header {
-      overflow: hidden;
-
       h1 {
-        top: 45%;
+        font-size: 3rem;
+
+        span,
+        span:nth-of-type(2) {
+          font-size: 2rem;
+        }
       }
 
       div {
-        flex-flow: row wrap;
-        bottom: 2%;
+        img {
+          width: 70px;
+
+          &:nth-of-type(5) {
+            width: 70px;
+          }
+        }
       }
     }
+  }
+}
 
+@media screen and(max-width: 690px) {
+  body main {
+    article {
+      ul {
+        li {
+          width: 140px;
+        }
+      }
+
+      .cv {
+        width: 140px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 625px) {
+  body {
     main {
-      overflow: hidden;
+      article {
+        &:nth-of-type(1) {
+          padding: 0 0.5rem;
 
-      article:nth-of-type(3),
-      article:nth-of-type(4) {
-        a {
-          display: none;
-        }
-
-        .container div {
-          margin-left: 2rem;
+          div {
+            margin: 0.7rem auto;
+          }
         }
       }
-    }
-
-    footer {
-      overflow: hidden;
     }
   }
 }
@@ -721,7 +781,6 @@ body {
       }
 
       article:nth-of-type(6) {
-        // word-break: break-all;
         ul li a,
         ul li span {
           font-size: 0.8rem;
@@ -758,98 +817,54 @@ body {
   }
 }
 
-@media screen and(max-width: 625px) {
+@media screen and(max-width: 430px) {
   body {
-    main {
-      article {
-        &:nth-of-type(1) {
-          padding: 0 0.5rem;
+    header {
+      overflow: hidden;
 
-          div {
-            margin: 0.7rem auto;
-          }
-        }
+      h1 {
+        top: 45%;
+      }
+
+      div {
+        flex-flow: row wrap;
+        bottom: 2%;
       }
     }
-  }
-}
 
-@media screen and(max-width: 690px) {
-  body main {
-    article {
-      ul {
-        li {
-          width: 140px;
+    main {
+      overflow: hidden;
+
+      article {
+        &:nth-of-type(1) {
+          padding: 0;
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+          a {
+            display: none;
+          }
+
+          .container div {
+            margin-left: 2rem;
+          }
+        }
+
+        &:nth-of-type(6) {
+          ul li {
+            width: 40%;
+          }
         }
       }
 
       .cv {
-        width: 140px;
+        font-size: 0.8rem;
       }
     }
-  }
-}
 
-// TABLET
-// Prends en compte a 826px wtf ???????????????????????????
-@media screen and(max-width: 843px) {
-  body {
-    header {
-      h1 {
-        font-size: 3rem;
-
-        span,
-        span:nth-of-type(2) {
-          font-size: 2rem;
-        }
-      }
-
-      div {
-        img {
-          width: 70px;
-
-          &:nth-of-type(5) {
-            width: 70px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 931px) {
-  body {
-    main {
-      width: 95%;
-
-      article {
-        &:nth-of-type(2),
-        &:nth-of-type(5) {
-          figure {
-            margin-top: 0.8rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 1020px) {
-  body {
-    main {
-      article {
-        &:nth-of-type(2) {
-          figure {
-            margin-left: 0.5rem;
-
-            &:nth-of-type(4) {
-              figcaption {
-                margin-left: -5px;
-              }
-            }
-          }
-        }
-      }
+    footer {
+      overflow: hidden;
     }
   }
 }

@@ -566,30 +566,51 @@ body footer div .fa-github-square {
   color: black;
 }
 
-@media screen and (max-width: 430px) {
-  body header {
-    overflow: hidden;
+@media screen and (max-width: 1020px) {
+  body main article:nth-of-type(2) figure {
+    margin-left: 0.5rem;
   }
-  body header h1 {
-    top: 45%;
+  body main article:nth-of-type(2) figure:nth-of-type(4) figcaption {
+    margin-left: -5px;
   }
-  body header div {
-    flex-flow: row wrap;
-    bottom: 2%;
-  }
+}
+@media screen and (max-width: 931px) {
   body main {
-    overflow: hidden;
+    width: 95%;
   }
-  body main article:nth-of-type(3) a,
-body main article:nth-of-type(4) a {
-    display: none;
+  body main article:nth-of-type(2) figure, body main article:nth-of-type(5) figure {
+    margin-top: 0.8rem;
   }
-  body main article:nth-of-type(3) .container div,
-body main article:nth-of-type(4) .container div {
-    margin-left: 2rem;
+}
+@media screen and (max-width: 843px) {
+  body header h1 {
+    font-size: 3rem;
   }
-  body footer {
-    overflow: hidden;
+  body header h1 span,
+body header h1 span:nth-of-type(2) {
+    font-size: 2rem;
+  }
+  body header div img {
+    width: 70px;
+  }
+  body header div img:nth-of-type(5) {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body main article ul li {
+    width: 140px;
+  }
+  body main article .cv {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 625px) {
+  body main article:nth-of-type(1) {
+    padding: 0 0.5rem;
+  }
+  body main article:nth-of-type(1) div {
+    margin: 0.7rem auto;
   }
 }
 @media screen and (max-width: 590px) {
@@ -622,51 +643,37 @@ body main article:nth-of-type(6) ul li span {
     width: 40%;
   }
 }
-@media screen and (max-width: 625px) {
-  body main article:nth-of-type(1) {
-    padding: 0 0.5rem;
+@media screen and (max-width: 430px) {
+  body header {
+    overflow: hidden;
   }
-  body main article:nth-of-type(1) div {
-    margin: 0.7rem auto;
-  }
-}
-@media screen and (max-width: 690px) {
-  body main article ul li {
-    width: 140px;
-  }
-  body main article .cv {
-    width: 140px;
-  }
-}
-@media screen and (max-width: 843px) {
   body header h1 {
-    font-size: 3rem;
+    top: 45%;
   }
-  body header h1 span,
-body header h1 span:nth-of-type(2) {
-    font-size: 2rem;
+  body header div {
+    flex-flow: row wrap;
+    bottom: 2%;
   }
-  body header div img {
-    width: 70px;
-  }
-  body header div img:nth-of-type(5) {
-    width: 70px;
-  }
-}
-@media screen and (max-width: 931px) {
   body main {
-    width: 95%;
+    overflow: hidden;
   }
-  body main article:nth-of-type(2) figure, body main article:nth-of-type(5) figure {
-    margin-top: 0.8rem;
+  body main article:nth-of-type(1) {
+    padding: 0;
   }
-}
-@media screen and (max-width: 1020px) {
-  body main article:nth-of-type(2) figure {
-    margin-left: 0.5rem;
+  body main article:nth-of-type(3) a, body main article:nth-of-type(4) a {
+    display: none;
   }
-  body main article:nth-of-type(2) figure:nth-of-type(4) figcaption {
-    margin-left: -5px;
+  body main article:nth-of-type(3) .container div, body main article:nth-of-type(4) .container div {
+    margin-left: 2rem;
+  }
+  body main article:nth-of-type(6) ul li {
+    width: 40%;
+  }
+  body main .cv {
+    font-size: 0.8rem;
+  }
+  body footer {
+    overflow: hidden;
   }
 }
 
