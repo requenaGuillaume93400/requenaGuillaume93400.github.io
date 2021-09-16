@@ -567,6 +567,9 @@ body footer div .fa-github-square {
 }
 
 @media screen and (max-width: 430px) {
+  body header{
+    overflow: hidden;
+  }
   body header h1 {
     top: 45%;
   }
