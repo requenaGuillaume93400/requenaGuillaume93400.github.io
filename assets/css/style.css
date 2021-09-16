@@ -567,7 +567,7 @@ body footer div .fa-github-square {
 }
 
 @media screen and (max-width: 430px) {
-  body header{
+  body header {
     overflow: hidden;
   }
   body header h1 {
@@ -599,12 +599,17 @@ body main article:nth-of-type(4) .container div {
   body main article:nth-of-type(1) div {
     width: 300px;
   }
+  body main article:nth-of-type(6) ul li a,
+body main article:nth-of-type(6) ul li span {
+    font-size: 0.8rem;
+  }
   body footer div h2 {
     padding-top: 2rem;
   }
   body footer div:first-child {
     display: block;
     padding-bottom: 2rem;
+    height: 57vh;
   }
   body footer div:first-child div {
     width: 18rem;

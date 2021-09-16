@@ -675,6 +675,7 @@ body {
   body {
     header {
       overflow: hidden;
+
       h1 {
         top: 45%;
       }
@@ -718,6 +719,14 @@ body {
           width: 300px;
         }
       }
+
+      article:nth-of-type(6) {
+        // word-break: break-all;
+        ul li a,
+        ul li span {
+          font-size: 0.8rem;
+        }
+      }
     }
 
     footer {
@@ -729,6 +738,7 @@ body {
         &:first-child {
           display: block;
           padding-bottom: 2rem;
+          height: 57vh;
 
           div {
             width: 18rem;
