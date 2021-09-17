@@ -730,8 +730,22 @@ footer {
 }
 
 @media screen and(max-width: 690px) {
+  // Ajouter body binary mobile
+  /* Added */
+  body {
+    background: url("../img/binary-mobile.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  main article
+  /* Added */
   main {
     article {
+      &:nth-of-type(1) div:nth-of-type(4) {
+        background: url("../img/fake-mobile.png");
+      }
+
       ul {
         li {
           width: 140px;
@@ -768,6 +782,11 @@ footer {
     article:nth-of-type(1) {
       div {
         width: 300px;
+
+        // Mettre a 690 breakpoint ?
+        // &:nth-of-type(4) {
+        //   background: url("../img/fake-mobile.png");
+        // }
       }
     }
 
