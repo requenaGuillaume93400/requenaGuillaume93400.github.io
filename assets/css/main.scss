@@ -22,6 +22,7 @@ $bgc: rgba(255, 255, 255, 0.85);
   animation-iteration-count: infinite;
 }
 
+// Remplacer les background-position par des background-origin ????? Performance betters
 @keyframes first {
   from {
     background-position: 0%;
@@ -535,11 +536,11 @@ main {
 
   // Pop from right and left side
   h2 {
-    margin-left: 100%;
+    transform: translateX(100%);
   }
 
   article {
-    margin-left: -100%;
+    transform: translateX(-100%);
   }
 
   .show-right {
@@ -557,19 +558,19 @@ main {
 
 @keyframes switch-right {
   from {
-    margin-left: 100%;
+    transform: translateX(100%);
   }
   to {
-    margin-left: -12.5%;
+    transform: translateX(-10%);
   }
 }
 
 @keyframes switch-left {
   from {
-    margin-left: -100%;
+    transform: translateX(-100%);
   }
   to {
-    margin-left: 0;
+    transform: translateX(0);
   }
 }
 // Pop from right and left side

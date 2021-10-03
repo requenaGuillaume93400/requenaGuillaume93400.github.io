@@ -455,10 +455,10 @@ main article .cv:hover {
   color: black;
 }
 main h2 {
-  margin-left: 100%;
+  transform: translateX(100%);
 }
 main article {
-  margin-left: -100%;
+  transform: translateX(-100%);
 }
 main .show-right {
   animation-duration: 3s;
@@ -473,18 +473,18 @@ main .show-left {
 
 @keyframes switch-right {
   from {
-    margin-left: 100%;
+    transform: translateX(100%);
   }
   to {
-    margin-left: -12.5%;
+    transform: translateX(-10%);
   }
 }
 @keyframes switch-left {
   from {
-    margin-left: -100%;
+    transform: translateX(-100%);
   }
   to {
-    margin-left: 0;
+    transform: translateX(0);
   }
 }
 footer {
