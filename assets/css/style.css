@@ -586,6 +586,12 @@ footer div .fa-github-square {
   }
 }
 @media screen and (max-width: 843px) {
+  body {
+    background: url("../img/binary-tablet.png");
+    background-attachment: fixed;
+    background-position: center;
+  }
+
   header h1 {
     font-size: 3rem;
   }

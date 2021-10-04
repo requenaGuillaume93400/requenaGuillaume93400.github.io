@@ -34,49 +34,17 @@ window.addEventListener("DOMContentLoaded", function () {
 
     showTitle(73, 5);
     showArticle(74, 5);
-
-    // requestAnimationFrame(show);
   });
 
   carrousel(carrousels[0], "firstCarrousel");
   carrousel(carrousels[1], "secondCarrousel");
   carrousel(carrousels[2], "thirdCarrousel");
   carrousel(carrousels[3], "fourthCarrousel");
-
-  // requestAnimationFrame(launchCarrousels);
 });
 
 // *************************************************************************************************************************** \\
 // ****************************************************** FUNCTIONS ********************************************************** \\
 // *************************************************************************************************************************** \\
-
-// function show() {
-//   // First h2 & article
-//   showTitle(2, 0);
-//   showArticle(2, 0);
-
-//   showTitle(28, 1);
-//   showArticle(29, 1);
-
-//   showTitle(31, 2);
-//   showArticle(33, 2);
-
-//   showTitle(38, 3);
-//   showArticle(39, 3);
-
-//   showTitle(44, 4);
-//   showArticle(45, 4);
-
-//   showTitle(73, 5);
-//   showArticle(74, 5);
-// }
-
-// function launchCarrousels() {
-//   carrousel(carrousels[0], "firstCarrousel");
-//   carrousel(carrousels[1], "secondCarrousel");
-//   carrousel(carrousels[2], "thirdCarrousel");
-//   carrousel(carrousels[3], "fourthCarrousel");
-// }
 
 function carrousel(element, carrouselNumber) {
   element.addEventListener("mouseover", function () {
