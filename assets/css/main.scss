@@ -413,7 +413,7 @@ main {
         }
 
         #modal-mention {
-          // visibility: hidden;
+          visibility: hidden;
           width: 80%;
           height: 400px;
           background: url("../img/mention.png") center/cover;
@@ -890,11 +890,11 @@ footer {
       }
 
       // A FAIRE
-      &:nth-of-type(3) {
-        .container #modal-mention {
-          visibility: hidden;
-        }
-      }
+      // &:nth-of-type(3) {
+      //   .container #modal-mention {
+      //     visibility: hidden;
+      //   }
+      // }
 
       &:nth-of-type(3),
       &:nth-of-type(4) {
