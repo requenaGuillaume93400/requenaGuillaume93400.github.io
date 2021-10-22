@@ -82,6 +82,10 @@ function modal() {
     mentionModal.style.visibility = "visible";
   });
 
+  mention.addEventListener("click", function () {
+    mentionModal.style.visibility = "visible";
+  });
+
   mention.addEventListener("mouseout", function () {
     mentionModal.style.visibility = "hidden";
   });
