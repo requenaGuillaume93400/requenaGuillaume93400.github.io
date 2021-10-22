@@ -1,6 +1,7 @@
 $mail-color: orange;
 $tel-color: rgb(135, 59, 126);
 $bgc: rgba(255, 255, 255, 0.85);
+$mention: darken(rgba(231, 243, 254, 0.8), 7%);
 
 @font-face {
   font-family: "comfortaa";
@@ -353,8 +354,13 @@ main {
         }
 
         &:nth-of-type(4) {
-          background: url("../img/fake.png");
-          background-position: 0%;
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../img/fake.png");
+            background-position: 0%;
+          }
         }
       }
     }
@@ -393,6 +399,27 @@ main {
           p:first-child {
             font-weight: bold;
           }
+        }
+
+        #mention {
+          width: 9rem;
+          margin-left: 0;
+          padding: 4px 10px;
+          text-align: center;
+          border: 1px solid black;
+          border-radius: 2rem;
+          background: $mention;
+          cursor: pointer;
+        }
+
+        #modal-mention {
+          // visibility: hidden;
+          width: 80%;
+          height: 400px;
+          background: url("../img/mention.png") center/cover;
+          position: absolute;
+          top: -16%;
+          left: 5%;
         }
       }
     }
@@ -515,7 +542,7 @@ main {
       display: block;
       width: 20%;
       margin: 0.5rem auto 0 auto;
-      padding: 1.2rem 0;
+      padding: 1.2rem 0.3rem;
       border-radius: 0.5rem;
       cursor: pointer;
       border: 2px solid transparent;
@@ -748,6 +775,15 @@ footer {
         background: url("../img/fake-mobile.png");
       }
 
+      &:nth-of-type(3) {
+        .container #modal-mention {
+          width: 90%;
+          top: -12%;
+          left: 0;
+          margin-left: 5%;
+        }
+      }
+
       ul {
         li {
           width: 140px;
@@ -823,6 +859,14 @@ footer {
   }
 }
 
+@media screen and(max-width: 480px) {
+  main article:nth-of-type(3) {
+    .container #modal-mention {
+      top: -5%;
+    }
+  }
+}
+
 @media screen and(max-width: 430px) {
   header {
     overflow: hidden;
@@ -843,6 +887,13 @@ footer {
     article {
       &:nth-of-type(1) {
         padding: 0;
+      }
+
+      // A FAIRE
+      &:nth-of-type(3) {
+        .container #modal-mention {
+          visibility: hidden;
+        }
       }
 
       &:nth-of-type(3),

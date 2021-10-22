@@ -5,6 +5,9 @@ const carrousels = document.querySelectorAll("main article:nth-of-type(1) div");
 const titles = document.querySelectorAll("h2");
 const articles = document.querySelectorAll("article");
 const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+const mention = document.getElementById("mention");
+const mentionModal = document.getElementById("modal-mention");
+// let screenWidth =
 let progress; // Scroll bar progression in %
 
 // *************************************************************************************************************************** \\
@@ -14,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function () {
   window.document.addEventListener("scroll", function () {
     progress = (Math.ceil(window.scrollY) * 100) / scrollable;
 
-    // console.log(progress);
+    modal();
 
     // First h2 & article
     showTitle(2, 0);
@@ -39,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
   carrousel(carrousels[0], "firstCarrousel");
   carrousel(carrousels[1], "secondCarrousel");
   carrousel(carrousels[2], "thirdCarrousel");
-  carrousel(carrousels[3], "fourthCarrousel");
+  carrousel(carrousels[3].querySelector("a"), "fourthCarrousel"); //
 });
 
 // *************************************************************************************************************************** \\
@@ -72,4 +75,14 @@ function showArticle(progressPercentage, number) {
   ) {
     articles[number].classList.add("show-left");
   }
+}
+
+function modal() {
+  mention.addEventListener("mouseover", function () {
+    mentionModal.style.visibility = "visible";
+  });
+
+  mention.addEventListener("mouseout", function () {
+    mentionModal.style.visibility = "hidden";
+  });
 }
