@@ -278,7 +278,7 @@ header {
 
       &:nth-of-type(5) {
         width: 100px;
-        background-color: #fff;
+        // background-color: #fff;
         border-radius: 50%;
       }
     }
@@ -329,8 +329,18 @@ main {
       flex-flow: row wrap;
       justify-content: space-evenly;
 
-      div {
-        cursor: crosshair;
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+
+        &:nth-of-type(1) {
+          margin-top: 2rem;
+        }
+      }
+
+      div:not(.separator) {
+        cursor: none;
         margin: 1.5rem 0;
         width: 500px;
         height: 300px;
@@ -353,12 +363,43 @@ main {
           background-position: 0%;
         }
 
-        &:nth-of-type(4) {
+        // &:nth-of-type(4) {
+        //   // div.separator alors que j'ai spécifier un not ?
+        //   a {
+        //     display: block;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: url("../img/fake.png"); // ICI BUG
+        //     background-position: 0%;
+        //   }
+        // }
+
+        &:nth-of-type(5) {
           a {
             display: block;
             width: 100%;
             height: 100%;
             background: url("../img/fake.png");
+            background-position: 0%;
+          }
+        }
+
+        &:nth-of-type(7) {
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../img/blog.png");
+            background-position: 0%;
+          }
+        }
+
+        &:nth-of-type(8) {
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../img/shop.png");
             background-position: 0%;
           }
         }

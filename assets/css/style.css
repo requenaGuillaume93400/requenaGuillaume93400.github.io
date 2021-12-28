@@ -259,7 +259,6 @@ header div img:nth-of-type(1) {
 }
 header div img:nth-of-type(5) {
   width: 100px;
-  background-color: #fff;
   border-radius: 50%;
 }
 
@@ -302,8 +301,16 @@ main article:nth-of-type(1) {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-main article:nth-of-type(1) div {
-  cursor: crosshair;
+main article:nth-of-type(1) h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+main article:nth-of-type(1) h3:nth-of-type(1) {
+  margin-top: 2rem;
+}
+main article:nth-of-type(1) div:not(.separator) {
+  cursor: none;
   margin: 1.5rem 0;
   width: 500px;
   height: 300px;
@@ -311,23 +318,37 @@ main article:nth-of-type(1) div {
   border-radius: 10px;
   overflow: hidden;
 }
-main article:nth-of-type(1) div:nth-of-type(1) {
+main article:nth-of-type(1) div:not(.separator):nth-of-type(1) {
   background: url("../img/restau.png");
   background-position: 0%;
 }
-main article:nth-of-type(1) div:nth-of-type(2) {
+main article:nth-of-type(1) div:not(.separator):nth-of-type(2) {
   background: url("../img/hello.png");
   background-position: 0%;
 }
-main article:nth-of-type(1) div:nth-of-type(3) {
+main article:nth-of-type(1) div:not(.separator):nth-of-type(3) {
   background: url("../img/archi.png");
   background-position: 0%;
 }
-main article:nth-of-type(1) div:nth-of-type(4) a {
+main article:nth-of-type(1) div:not(.separator):nth-of-type(5) a {
   display: block;
   width: 100%;
   height: 100%;
   background: url("../img/fake.png");
+  background-position: 0%;
+}
+main article:nth-of-type(1) div:not(.separator):nth-of-type(7) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/blog.png");
+  background-position: 0%;
+}
+main article:nth-of-type(1) div:not(.separator):nth-of-type(8) a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/shop.png");
   background-position: 0%;
 }
 main article:nth-of-type(2) figure:nth-of-type(6) img {
