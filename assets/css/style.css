@@ -273,6 +273,8 @@ main h2 {
   font-size: 2.2rem;
   color: #fff;
   text-align: center;
+  z-index: -1;
+  position: relative;
 }
 main p {
   line-height: 1.5;
@@ -374,6 +376,10 @@ main article:nth-of-type(3) .container div, main article:nth-of-type(4) .contain
 main article:nth-of-type(3) .container div p:first-child, main article:nth-of-type(4) .container div p:first-child {
   font-weight: bold;
 }
+main article:nth-of-type(3) .container ul, main article:nth-of-type(4) .container ul {
+  margin-left: 2rem;
+  list-style-type: "- ";
+}
 main article:nth-of-type(3) .container #mention, main article:nth-of-type(4) .container #mention {
   width: 9rem;
   margin-left: 0;
@@ -390,8 +396,11 @@ main article:nth-of-type(3) .container #modal-mention, main article:nth-of-type(
   height: 400px;
   background: url("../img/mention.png") center/cover;
   position: absolute;
-  top: -16%;
   left: 5%;
+  z-index: 20;
+}
+main article:nth-of-type(4) p {
+  text-align: center;
 }
 main article.flex-container {
   padding: 1rem 0;
@@ -661,8 +670,9 @@ header h1 span:nth-of-type(2) {
   }
   main article:nth-of-type(3) .container #modal-mention {
     width: 90%;
-    top: -12%;
+    top: 83%;
     left: 0;
+    background-position: left;
     margin-left: 5%;
   }
   main article ul li {
@@ -713,7 +723,7 @@ main article:nth-of-type(6) ul li span {
 }
 @media screen and (max-width: 480px) {
   main article:nth-of-type(3) .container #modal-mention {
-    top: -5%;
+    background-position: 25% 75%;
   }
 }
 @media screen and (max-width: 430px) {
