@@ -411,6 +411,10 @@ main {
     &:nth-of-type(4) {
       padding: 1.2rem 0 1rem 0;
 
+      a {
+        height: 5rem;
+      }
+
       img {
         width: 100px;
       }
