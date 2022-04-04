@@ -16,6 +16,9 @@ $mention: darken(rgba(231, 243, 254, 0.8), 7%);
   font-size: 16px;
 }
 
+/***********************************************
+****************** ANIMATIONS ******************
+***********************************************/
 // FIRST
 .firstCarrousel {
   animation-duration: 30s;
@@ -230,6 +233,44 @@ $mention: darken(rgba(231, 243, 254, 0.8), 7%);
   }
 }
 
+// Pop from right and left side
+@keyframes switch-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+
+@keyframes switch-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.fade {
+  animation-duration: 2.5s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/***********************************************
+******************** STYLE *********************
+***********************************************/
 body {
   font-family: "comfortaa";
   width: 100%;
@@ -417,6 +458,7 @@ main {
 
       img {
         width: 100px;
+        opacity: 0;
       }
 
       .container {
@@ -628,25 +670,6 @@ main {
   }
 }
 
-@keyframes switch-right {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-10%);
-  }
-}
-
-@keyframes switch-left {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-// Pop from right and left side
-
 footer {
   margin-top: 2rem;
 
@@ -742,8 +765,9 @@ footer {
   }
 }
 
-// ************************* Responsive ************************* \\
-
+/***********************************************
+****************** RESPONSIVE ******************
+***********************************************/
 @media screen and(max-width: 1020px) {
   main {
     article {

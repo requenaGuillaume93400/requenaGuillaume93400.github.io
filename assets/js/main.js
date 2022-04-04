@@ -6,19 +6,22 @@ const carrousels = document.querySelectorAll(
 );
 const titles = document.querySelectorAll("h2");
 const articles = document.querySelectorAll("article");
+const images = document.querySelectorAll(".container a img");
 const scrollable = document.documentElement.scrollHeight - window.innerHeight;
 const mention = document.getElementById("mention");
 const mentionModal = document.getElementById("modal-mention");
+const formationArticle = document.querySelector("article:nth-of-type(3)");
 let progress; // Scroll bar progression in %
+let timer = 0;
+let startTimer;
 
 // *************************************************************************************************************************** \\
 // ****************************************************** MAIN CODE ********************************************************** \\
 // *************************************************************************************************************************** \\
 window.addEventListener("DOMContentLoaded", function () {
+  modal();
   window.document.addEventListener("scroll", function () {
     progress = (Math.ceil(window.scrollY) * 100) / scrollable;
-
-    modal();
 
     // First h2 & article
     showTitle(2, 0);
@@ -47,6 +50,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
   carrousel(carrousels[4].querySelector("a"), "firstCarrousel");
   carrousel(carrousels[5].querySelector("a"), "firstCarrousel");
+
+  fadeImage();
 });
 
 // *************************************************************************************************************************** \\
@@ -93,4 +98,20 @@ function modal() {
   mention.addEventListener("mouseout", function () {
     mentionModal.style.visibility = "hidden";
   });
+}
+
+function fadeImage() {
+  progress = (Math.ceil(window.scrollY) * 100) / scrollable;
+
+  progress < 44 ? (startTimer = 4000) : (startTimer = 2000);
+
+  setTimeout(function () {
+    images.forEach(function (image) {
+      timer += 800;
+
+      setTimeout(function () {
+        image.classList.add("fade");
+      }, timer);
+    });
+  }, startTimer);
 }
