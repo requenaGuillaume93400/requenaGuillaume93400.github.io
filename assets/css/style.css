@@ -453,6 +453,9 @@ main article.flex-container {
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+main article.flex-container figure {
+  margin: 0.5rem;
+}
 main article.flex-container figure img {
   width: 80px;
   height: 80px;
