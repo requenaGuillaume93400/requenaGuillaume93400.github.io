@@ -233,6 +233,100 @@ $mention: darken(rgba(231, 243, 254, 0.8), 7%);
   }
 }
 
+// FIVE
+.fifthCarrousel {
+  animation-duration: 50s;
+  animation-name: fifth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fifth {
+  from {
+    background-position: 0%;
+  }
+  4% {
+    background-position: 7.7%;
+  }
+  8% {
+    background-position: 15.4%;
+  }
+  12% {
+    background-position: 23.1%;
+  }
+  16% {
+    background-position: 30.8%;
+  }
+  20% {
+    background-position: 38.45%;
+  }
+  24% {
+    background-position: 46.15%;
+  }
+  28% {
+    background-position: 53.85%;
+  }
+  32% {
+    background-position: 61.5%;
+  }
+  36% {
+    background-position: 69.2%;
+  }
+  40% {
+    background-position: 76.9%;
+  }
+  44% {
+    background-position: 84.6%;
+  }
+  47% {
+    background-position: 92.3%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  51% {
+    background-position: 100%;
+  }
+  53% {
+    background-position: 92.3%;
+  }
+  57% {
+    background-position: 84.6%;
+  }
+  61% {
+    background-position: 76.9%;
+  }
+  65% {
+    background-position: 69.2%;
+  }
+  69% {
+    background-position: 61.5%;
+  }
+  73% {
+    background-position: 53.85%;
+  }
+  77% {
+    background-position: 46.15%;
+  }
+  81% {
+    background-position: 38.45%;
+  }
+  85% {
+    background-position: 30.8%;
+  }
+  89% {
+    background-position: 23.1%;
+  }
+  93% {
+    background-position: 15.4%;
+  }
+  97% {
+    background-position: 7.7%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
 // Pop from right and left side
 @keyframes switch-right {
   from {
@@ -433,6 +527,11 @@ main {
             background: url("../img/shop.png");
             background-position: 0%;
           }
+        }
+
+        &:nth-of-type(10) {
+          background: url("../img/test.png");
+          background-position: 0%;
         }
       }
     }

@@ -51,6 +51,8 @@ window.addEventListener("DOMContentLoaded", function () {
   carrousel(carrousels[4].querySelector("a"), "firstCarrousel");
   carrousel(carrousels[5].querySelector("a"), "firstCarrousel");
 
+  carrousel(carrousels[6], "fifthCarrousel");
+
   fadeImage();
 });
 
