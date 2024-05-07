@@ -229,83 +229,44 @@
   from {
     background-position: 0%;
   }
-  4% {
-    background-position: 7.7%;
-  }
   8% {
     background-position: 15.4%;
-  }
-  12% {
-    background-position: 23.1%;
   }
   16% {
     background-position: 30.8%;
   }
-  20% {
-    background-position: 38.45%;
-  }
   24% {
-    background-position: 46.15%;
-  }
-  28% {
-    background-position: 53.85%;
+    background-position: 45%;
   }
   32% {
-    background-position: 61.5%;
-  }
-  36% {
-    background-position: 69.2%;
+    background-position: 59%;
   }
   40% {
-    background-position: 76.9%;
+    background-position: 72.9%;
   }
-  44% {
-    background-position: 84.6%;
-  }
-  47% {
-    background-position: 92.3%;
+  45% {
+    background-position: 87%;
   }
   50% {
     background-position: 100%;
   }
-  51% {
-    background-position: 100%;
+  58% {
+    background-position: 87%;
   }
-  53% {
-    background-position: 92.3%;
+  66% {
+    background-position: 72.9%;
   }
-  57% {
-    background-position: 84.6%;
+  74% {
+    background-position: 59%;
   }
-  61% {
-    background-position: 76.9%;
+  82% {
+    background-position: 45%;
   }
-  65% {
-    background-position: 69.2%;
-  }
-  69% {
-    background-position: 61.5%;
-  }
-  73% {
-    background-position: 53.85%;
-  }
-  77% {
-    background-position: 46.15%;
-  }
-  81% {
-    background-position: 38.45%;
-  }
-  85% {
+  90% {
     background-position: 30.8%;
   }
-  89% {
-    background-position: 23.1%;
-  }
-  93% {
+  95% {
     background-position: 15.4%;
-  }
-  97% {
-    background-position: 7.7%;
   }
   to {
     background-position: 0%;
