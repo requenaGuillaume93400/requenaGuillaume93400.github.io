@@ -382,7 +382,7 @@ main article {
   width: 100%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.501);
-  color: white;
+  color: #fff;
   border-radius: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -446,6 +446,34 @@ main article:nth-of-type(1) div:not(.separator):nth-of-type(8) a {
 main article:nth-of-type(1) div:not(.separator):nth-of-type(10) {
   background: url("../img/test.png");
   background-position: 0%;
+}
+main article:nth-of-type(1) #scripts {
+  cursor: initial;
+  background-color: initial;
+  text-align: center;
+}
+main article:nth-of-type(1) #scripts p {
+  background-color: #27ab5e;
+  margin-bottom: 5px;
+  border-radius: 0.5rem;
+}
+main article:nth-of-type(1) #scripts p:nth-of-type(1) {
+  padding: initial;
+  background-color: initial;
+  margin-bottom: initial;
+}
+main article:nth-of-type(1) #scripts p a {
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+main article:nth-of-type(1) #scripts p:not(:nth-of-type(1)):hover {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+main article:nth-of-type(1) #scripts p:not(:nth-of-type(1)):hover a {
+  color: rgb(0, 0, 0);
 }
 main article:nth-of-type(2) figure:nth-of-type(6) img {
   background-color: #fff;

@@ -2,6 +2,7 @@ $mail-color: orange;
 $tel-color: rgb(135, 59, 126);
 $bgc: rgba(255, 255, 255, 0.85);
 $mention: darken(rgba(231, 243, 254, 0.8), 7%);
+$font-color: #fff;
 
 @font-face {
   font-family: "comfortaa";
@@ -241,114 +242,48 @@ $mention: darken(rgba(231, 243, 254, 0.8), 7%);
 }
 
 @keyframes fifth {
-  // // 1
-  // from {
-  //   background-position: 0%;
-  // }
-  // 8% {
-  //   background-position: 15.4%;
-  // }
-
-  // // 2
-  // 13% {
-  //   background-position: 30.8%;
-  // }
-  // 20% {
-  //   background-position: 45%;
-  // }
-
-  // // 3
-  // 24% {
-  //   background-position: 59%;
-  // }
-  // 28% {
-  //   // background-position: 61.5%;
-  //   background-position: 65.5%;
-  // }
-
-  // // 4
-  // 32% {
-  //   background-position: 73%;
-  // }
-  // 48% {
-  //   // background-position: 92.3%;
-  //   background-position: 88%;
-  // }
-
-  // // Fin
-  // 50% {
-  //   background-position: 100%;
-  // }
-
-  // 51% {
-  //   background-position: 100%;
-  // }
-  // to {
-  //   background-position: 0%;
-  // }
-
-  // 1
   from {
     background-position: 0%;
   }
   8% {
     background-position: 15.4%;
   }
-
-  // 2
   16% {
     background-position: 30.8%;
   }
   24% {
     background-position: 45%;
   }
-  // 4eme image
-
-  // // 3
   32% {
     background-position: 59%;
   }
   40% {
     background-position: 72.9%;
   }
-
-  // // 4
   45% {
     background-position: 87%;
   }
-
   50% {
     background-position: 100%;
   }
-
-  // 51% {
-  //   background-position: 100%;
-  // }
-
   58% {
     background-position: 87%;
   }
-
   66% {
     background-position: 72.9%;
   }
-
   74% {
     background-position: 59%;
   }
-
   82% {
     background-position: 45%;
   }
-
   90% {
     background-position: 30.8%;
   }
-
   95% {
     background-position: 15.4%;
   }
-
   to {
     background-position: 0%;
   }
@@ -405,7 +340,7 @@ header {
   position: relative;
 
   h1 {
-    color: #fff;
+    color: $font-color;
     font-size: 4rem;
     text-align: center;
     width: 90%;
@@ -455,7 +390,7 @@ main {
     width: 125%;
     margin: 5rem auto 0.4rem auto;
     font-size: 2.2rem;
-    color: #fff;
+    color: $font-color;
     text-align: center;
     z-index: -1;
     position: relative;
@@ -480,7 +415,7 @@ main {
     width: 100%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.501);
-    color: white;
+    color: $font-color;
     border-radius: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -507,7 +442,7 @@ main {
         margin: 1.5rem 0;
         width: 500px;
         height: 300px;
-        background-color: #fff;
+        background-color: $font-color;
         border-radius: 10px;
         overflow: hidden;
 
@@ -561,13 +496,47 @@ main {
           background-position: 0%;
         }
       }
+
+      #scripts {
+        cursor: initial;
+        background-color: initial;
+        text-align: center;
+
+        p {
+          background-color: #27ab5e;
+          margin-bottom: 5px;
+          border-radius: 0.5rem;
+
+          &:nth-of-type(1) {
+            padding: initial;
+            background-color: initial;
+            margin-bottom: initial;
+          }
+
+          a {
+            padding: 1rem;
+            color: $font-color;
+            text-decoration: none;
+            display: block;
+          }
+
+          &:not(:nth-of-type(1)):hover {
+            border: 2px solid rgba(0, 0, 0, 1);
+            background-color: $bgc;
+
+            a {
+              color: rgba(0, 0, 0, 1);
+            }
+          }
+        }
+      }
     }
 
     &:nth-of-type(2) {
       figure {
         &:nth-of-type(6) {
           img {
-            background-color: #fff;
+            background-color: $font-color;
           }
         }
       }
@@ -631,7 +600,6 @@ main {
           height: 400px;
           background: url("../img/mention.png") center/cover;
           position: absolute;
-          // top: -16%;
           left: 5%;
           z-index: 20;
         }
@@ -768,7 +736,7 @@ main {
       cursor: pointer;
       border: 2px solid transparent;
       background-color: #27ab5e;
-      color: #fff;
+      color: $font-color;
       font-weight: bold;
       text-decoration: none;
 
@@ -979,7 +947,6 @@ footer {
       &:nth-of-type(3) {
         .container #modal-mention {
           width: 90%;
-          // top: -12%;
           top: 83%;
           left: 0;
           background-position: left;
@@ -1065,7 +1032,6 @@ footer {
 @media screen and(max-width: 480px) {
   main article:nth-of-type(3) {
     .container #modal-mention {
-      // top: -5%;
       background-position: 25% 75%;
     }
   }
