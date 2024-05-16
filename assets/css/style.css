@@ -447,32 +447,32 @@ main article:nth-of-type(1) div:not(.separator):nth-of-type(10) {
   background: url("../img/test.png");
   background-position: 0%;
 }
-main article:nth-of-type(1) #scripts {
+main article:nth-of-type(1) .gitLinks {
   cursor: initial;
-  background-color: initial;
+  background-color: transparent !important;
   text-align: center;
 }
-main article:nth-of-type(1) #scripts p {
-  background-color: #27ab5e;
-  margin-bottom: 5px;
-  border-radius: 0.5rem;
-}
-main article:nth-of-type(1) #scripts p:nth-of-type(1) {
+main article:nth-of-type(1) .gitLinks .desc {
   padding: initial;
   background-color: initial;
   margin-bottom: initial;
 }
-main article:nth-of-type(1) #scripts p a {
+main article:nth-of-type(1) .gitLinks p {
+  background-color: #27ab5e;
+  margin-bottom: 5px;
+  border-radius: 0.5rem;
+}
+main article:nth-of-type(1) .gitLinks p a {
   padding: 1rem;
   color: #fff;
   text-decoration: none;
   display: block;
 }
-main article:nth-of-type(1) #scripts p:not(:nth-of-type(1)):hover {
+main article:nth-of-type(1) .gitLinks p:not(.desc):hover {
   border: 2px solid rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.85);
 }
-main article:nth-of-type(1) #scripts p:not(:nth-of-type(1)):hover a {
+main article:nth-of-type(1) .gitLinks p:not(.desc):hover a {
   color: rgb(0, 0, 0);
 }
 main article:nth-of-type(2) figure:nth-of-type(6) img {
@@ -763,12 +763,11 @@ footer div .fa-github-square {
     background-attachment: fixed;
     background-position: center;
   }
-
   header h1 {
     font-size: 3rem;
   }
   header h1 span,
-header h1 span:nth-of-type(2) {
+  header h1 span:nth-of-type(2) {
     font-size: 2rem;
   }
   header div img {
@@ -784,7 +783,6 @@ header h1 span:nth-of-type(2) {
     background-attachment: fixed;
     background-position: center;
   }
-
   main article:nth-of-type(1) div:nth-of-type(4) {
     background: url("../img/fake-mobile.png");
   }
@@ -818,10 +816,9 @@ header h1 span:nth-of-type(2) {
     width: 300px;
   }
   main article:nth-of-type(6) ul li a,
-main article:nth-of-type(6) ul li span {
+  main article:nth-of-type(6) ul li span {
     font-size: 0.8rem;
   }
-
   footer div h2 {
     padding-top: 2rem;
   }
@@ -857,7 +854,6 @@ main article:nth-of-type(6) ul li span {
     flex-flow: row wrap;
     bottom: 2%;
   }
-
   main {
     overflow: hidden;
   }
@@ -876,7 +872,6 @@ main article:nth-of-type(6) ul li span {
   main .cv {
     font-size: 0.8rem;
   }
-
   footer {
     overflow: hidden;
   }

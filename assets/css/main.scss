@@ -497,21 +497,27 @@ main {
         }
       }
 
-      #scripts {
+      .gitLinks {
         cursor: initial;
-        background-color: initial;
+        background-color: transparent !important;
         text-align: center;
+
+        .desc {
+          padding: initial;
+          background-color: initial;
+          margin-bottom: initial;
+        }
 
         p {
           background-color: #27ab5e;
           margin-bottom: 5px;
           border-radius: 0.5rem;
 
-          &:nth-of-type(1) {
-            padding: initial;
-            background-color: initial;
-            margin-bottom: initial;
-          }
+          // &:nth-of-type(1) {
+          //   padding: initial;
+          //   background-color: initial;
+          //   margin-bottom: initial;
+          // }
 
           a {
             padding: 1rem;
@@ -520,7 +526,7 @@ main {
             display: block;
           }
 
-          &:not(:nth-of-type(1)):hover {
+          &:not(.desc):hover {
             border: 2px solid rgba(0, 0, 0, 1);
             background-color: $bgc;
 
@@ -868,7 +874,7 @@ footer {
 /***********************************************
 ****************** RESPONSIVE ******************
 ***********************************************/
-@media screen and(max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   main {
     article {
       &:nth-of-type(2) {
@@ -886,7 +892,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 931px) {
+@media screen and (max-width: 931px) {
   main {
     width: 95%;
 
@@ -902,7 +908,7 @@ footer {
 }
 
 // TABLET
-@media screen and(max-width: 843px) {
+@media screen and (max-width: 843px) {
   body {
     background: url("../img/binary-tablet.png");
     background-attachment: fixed;
@@ -931,7 +937,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 690px) {
+@media screen and (max-width: 690px) {
   body {
     background: url("../img/binary-mobile.png");
     background-attachment: fixed;
@@ -967,7 +973,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 625px) {
+@media screen and (max-width: 625px) {
   main {
     article {
       &:nth-of-type(1) {
@@ -981,7 +987,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 590px) {
+@media screen and (max-width: 590px) {
   main {
     h2 {
       word-spacing: 1000px;
@@ -1029,7 +1035,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
   main article:nth-of-type(3) {
     .container #modal-mention {
       background-position: 25% 75%;
@@ -1037,7 +1043,7 @@ footer {
   }
 }
 
-@media screen and(max-width: 430px) {
+@media screen and (max-width: 430px) {
   header {
     overflow: hidden;
 
