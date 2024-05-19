@@ -289,6 +289,37 @@ $font-color: #fff;
   }
 }
 
+// SIX
+.sixthCarrousel {
+  animation-duration: 18s;
+  animation-name: sixth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sixth {
+  from {
+    background-position: 0%;
+  }
+  18% {
+    background-position: 33.2%;
+  }
+  36% {
+    background-position: 66.5%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  68% {
+    background-position: 66.5%;
+  }
+  86% {
+    background-position: 33.2%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
 // Pop from right and left side
 @keyframes switch-right {
   from {
@@ -437,6 +468,10 @@ main {
         }
       }
 
+      .heighter {
+        height: 320px !important;
+      }
+
       div:not(.separator) {
         cursor: none;
         margin: 1.5rem 0;
@@ -495,6 +530,11 @@ main {
           background: url("../img/test.png");
           background-position: 0%;
         }
+
+        &:nth-of-type(13) {
+          background: url("../img/artwork.png");
+          background-position: 0%;
+        }
       }
 
       .gitLinks {
@@ -512,12 +552,6 @@ main {
           background-color: #27ab5e;
           margin-bottom: 5px;
           border-radius: 0.5rem;
-
-          // &:nth-of-type(1) {
-          //   padding: initial;
-          //   background-color: initial;
-          //   margin-bottom: initial;
-          // }
 
           a {
             padding: 1rem;

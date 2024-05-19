@@ -53,6 +53,8 @@ window.addEventListener("DOMContentLoaded", function () {
 
   carrousel(carrousels[6], "fifthCarrousel");
 
+  carrousel(carrousels[8], "sixthCarrousel");
+
   fadeImage();
 });
 

@@ -272,6 +272,35 @@
     background-position: 0%;
   }
 }
+.sixthCarrousel {
+  animation-duration: 18s;
+  animation-name: sixth;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sixth {
+  from {
+    background-position: 0%;
+  }
+  18% {
+    background-position: 33.2%;
+  }
+  36% {
+    background-position: 66.5%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  68% {
+    background-position: 66.5%;
+  }
+  86% {
+    background-position: 33.2%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
 @keyframes switch-right {
   from {
     transform: translateX(100%);
@@ -401,6 +430,9 @@ main article:nth-of-type(1) h3 {
 main article:nth-of-type(1) h3:nth-of-type(1) {
   margin-top: 2rem;
 }
+main article:nth-of-type(1) .heighter {
+  height: 320px !important;
+}
 main article:nth-of-type(1) div:not(.separator) {
   cursor: none;
   margin: 1.5rem 0;
@@ -445,6 +477,10 @@ main article:nth-of-type(1) div:not(.separator):nth-of-type(8) a {
 }
 main article:nth-of-type(1) div:not(.separator):nth-of-type(10) {
   background: url("../img/test.png");
+  background-position: 0%;
+}
+main article:nth-of-type(1) div:not(.separator):nth-of-type(13) {
+  background: url("../img/artwork.png");
   background-position: 0%;
 }
 main article:nth-of-type(1) .gitLinks {
