@@ -390,26 +390,6 @@ header {
       }
     }
   }
-
-  div {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-
-    img {
-      &:nth-of-type(1) {
-        transform: scale(0.92);
-      }
-
-      &:nth-of-type(5) {
-        width: 100px;
-        border-radius: 50%;
-      }
-    }
-  }
 }
 
 main {
