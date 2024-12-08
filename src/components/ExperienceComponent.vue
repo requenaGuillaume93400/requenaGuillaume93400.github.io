@@ -2,7 +2,11 @@
   <h2>Expérience</h2>
   <article>
     <div class="container">
-      <a href="https://www.pensermieux.com/" target="_blank">
+      <a
+        href="https://www.pensermieux.com/"
+        target="_blank"
+        title="Consulter le site Penser mieux l'energie"
+      >
         <img
           src="/images/pme-2.webp"
           alt="Logo Penser mieux l'energie"
@@ -34,7 +38,11 @@
     <div class="separator"></div>
 
     <div class="container">
-      <a href="https://ecotree.green/" target="_blank">
+      <a
+        href="https://ecotree.green/"
+        target="_blank"
+        title="Consulter le site Ecotree"
+      >
         <img src="/images/ecotree.webp" alt="Logo EcoTree" loading="lazy" />
       </a>
       <div>

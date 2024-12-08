@@ -3,17 +3,25 @@
   <article>
     <div class="container">
       <div class="internship">
-        <a href="https://openclassrooms.com/fr/" target="_blank">
+        <a
+          href="https://openclassrooms.com/fr/"
+          target="_blank"
+          title="Consulter le site Openclassrooms"
+        >
           <img
             src="/images/open.webp"
             alt="Logo Openclassrooms"
             loading="lazy"
           />
         </a>
-        <a href="https://ecotree.green/" target="_blank">
+        <a
+          href="https://ecotree.green/"
+          target="_blank"
+          title="Consulter le site Ecotree"
+        >
           <img src="/images/ecotree.webp" alt="Logo EcoTree" loading="lazy" />
         </a>
-        <a href="#">
+        <a href="#" title="Aucune page disponible">
           <img src="/images/auto.webp" alt="Logo Autodidacte" loading="lazy" />
         </a>
       </div>
@@ -83,7 +91,7 @@
     <div class="separator"></div>
 
     <div class="container">
-      <a href="#">
+      <a href="#" title="Aucune page disponible">
         <img src="/images/auto.webp" alt="Logo Autodidacte" loading="lazy" />
       </a>
       <div>
@@ -112,7 +120,7 @@
     <div class="separator"></div>
 
     <div class="container">
-      <a href="https://3wa.fr/" title="Visitez leur site">
+      <a href="https://3wa.fr/" title="Consulter le site 3WAcademy">
         <img src="/images/3wa.webp" alt="Logo de la 3WAcademy" loading="lazy" />
       </a>
       <div>
@@ -142,7 +150,7 @@
     <div class="separator"></div>
 
     <div class="container">
-      <a href="#">
+      <a href="#" title="Aucun lien disponible">
         <img src="/images/auto.webp" alt="Logo Autodidacte" loading="lazy" />
       </a>
       <div>
