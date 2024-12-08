@@ -1,0 +1,22 @@
+
+Portfolio en Vuejs
+
+Changement par rapport a l'actuel : 
+
+  TODO - a choisir une autre image ? ....
+  1) Fond blanc (plus d'image)
+
+  2) Remove css !important
+
+  3) Trier les exercices / réalisations 
+     par type : Front-end, Back-end
+     par language
+     par framework
+  PAR TAG (html, css, php, sf, etc etc..)
+  Chaque exercice aura un/plusieurs tag(s)
+
+Afficher le résultat de la recherche / selection dans le 1er block ?
+Et/Ou Faire une navigation ? 
+Et/Ou Tous charger comme maintenant mais avec une main.png au lieu de carrousel.png ?
+      Mais ça obligerait a cliquer pour en voir plus ? pas fan     
+     
